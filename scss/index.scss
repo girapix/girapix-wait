@@ -1,0 +1,12 @@
+// Plugins
+@import './../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import './../node_modules//sass-flex-mixin/flex';
+
+// Mixins
+@import 'mixins/mixins';
+
+// Estilos
+@import 'templates/index';
+
+// Reset
+@import 'mixins/reset';

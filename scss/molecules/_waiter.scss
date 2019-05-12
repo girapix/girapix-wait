@@ -12,18 +12,14 @@
     }
     .wait-content {
         margin-bottom: 0;
-        height: 90%;
-        text-align: center;
+        height: 85%;
         .middle {
-            padding-top: 8rem;
-            @include mq('desktop') {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                width: 90%;
-            }
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
             .logo {
                 @include push--auto;
                 width: 120px;
@@ -65,8 +61,7 @@
     }
     .wait-footer {
         margin-bottom: 0 !important;
-        // padding-bottom: 20px;
-        // bottom: 0;
+        padding-bottom: 20px;
         .container {
             text-align: center;
             .social {

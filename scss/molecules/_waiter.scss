@@ -3,6 +3,7 @@
     min-height: 100vh;
     display: block;
     position: relative;
+    overflow: overlay;
     background: {
         image: url('./../assets/img/bg-padronagem-azul.jpg');
         size: cover;
@@ -59,6 +60,8 @@
         }
     }
     .wait-footer {
+        margin-bottom: 0 !important;
+        padding-bottom: 20px;
         .container {
             text-align: center;
             .social {

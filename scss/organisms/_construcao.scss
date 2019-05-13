@@ -1,0 +1,84 @@
+body {
+    background: {
+        image: url('./../assets/institucional/padronagem-vertical.jpg');
+        position: top left;
+        size: cover;
+    }
+    @include mq('tablet-wide') {
+        background-image: url('./../assets/institucional/bg-padronagem-azul.jpg');
+    }
+}
+.construcao {
+    height: 85vh;
+    .container {
+        text-align: center;
+        @include vertical-center();
+        .logo {
+            width: 120px;
+            @include push--auto;
+            @include mq('tablet-wide') {
+                width: 200px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .texto {
+            h1 {
+                font-family: 'Muli', sans-serif !important;
+                color: $amarelo;
+                font-size: 1.8rem;
+                margin: 3vh 0 2vh;
+                @include mq('tablet-wide') {
+                    font-size: 4rem;
+                    margin: 5vh 0 4vh;
+                }
+            }
+            h2 {
+                font-family: 'Muli', sans-serif;
+                color: $branco;
+                font-size: 1rem;
+                @include mq('tablet-wide') {
+                    font-size: 2rem;
+                }
+            }
+        }
+        hr {
+            width: 80%;
+            border: 1px solid $amarelo;
+            margin: 4vh auto;
+            @include mq('tablet-wide') {
+                width: 60%;
+            }
+        }
+        #timer {
+            color: $branco;
+            font-family: 'Muli', sans-serif;
+            font-size: 1rem;
+            @include mq('tablet-wide') {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.footer {
+    height: 15vh;
+    .container {
+        @include vertical-center();
+        .sociais {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            a {
+                color: $amarelo;
+                font-size: 2rem;
+                &:hover {
+                    color: $dourado;
+                }
+                @include mq('tablet-wide') {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

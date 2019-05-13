@@ -12,7 +12,7 @@ var countDownfunction = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     // Renderizar o resultado em um elemento com uma id="demo"
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("timer").innerHTML = days + " dias " + hours + " horas " + minutes + " minutos " + seconds + " segundos ";
     // se o contador zerar, mostrar o seguinte texto:
     if(distance < 0) {
         clearInterval(countDownfunction);
